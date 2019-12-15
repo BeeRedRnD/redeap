@@ -1,0 +1,458 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ReDEAP Version 1</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="tree-boxes.css">
+
+    <script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.12.2/d3.min.js"></script>
+    <script src="tree-boxes.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="ba_test.css">
+  </head>
+  <body>
+
+
+<script>
+const treeData = {
+  "name": "ReDEAP",
+  "value": 15,
+  "type": "red",
+  "level": "yellow",
+  "children": [
+
+    {
+      "name": "Accessibility",
+      "value": 10,
+      "type": "grey",
+      "level": "red",
+      "children": [
+        {
+          "name": "Perceiveable",
+          "value": 7.5,
+          "type": "grey",
+          "level": "purple",
+          "children": [
+        {
+          "name": "Each Character Entered Must be Heard",
+          "value": 7.5,
+          "type": "black",
+          "level": "pink"
+        },
+         {
+          "name": "Easily Detectable Vibration Feedback",
+          "value": 7.5,
+          "type": "black",
+          "level": "pink"
+        },
+           {
+          "name": "Loud Sound of Notifications",
+          "value": 7.5,
+          "type": "black",
+          "level": "pink"
+        },
+            {
+          "name": "Video Based Tutorials",
+          "value": 7.5,
+          "type": "black",
+          "level": "pink"
+        }
+        ]
+        },
+        {
+          "name": "Operable",
+          "value": 7.5,
+          "type": "grey",
+          "level": "purple",
+          "children": [
+        {
+          "name": "Allow to Cancel a Selection",
+          "value": 7.5,
+          "type": "black",
+          "level": "pink"
+        },
+         {
+          "name": "Objects/Smartphone Graspable",
+          "value": 7.5,
+          "type": "black",
+          "level": "pink"
+        },
+           {
+          "name": "Allow Alternative Modality to Accomplish Tasks",
+          "value": 7.5,
+          "type": "black",
+          "level": "pink"
+        },
+            {
+          "name": "Fast Swiping",
+          "value": 7.5,
+          "type": "black",
+          "level": "pink"
+        }
+        ]
+        },
+        {
+          "name": "Understandable",
+          "value": 7.5,
+          "type": "grey",
+          "level": "purple",
+          "children": [
+        {
+          "name": "Information Concentrated in Center",
+          "value": 7.5,
+          "type": "black",
+          "level": "pink"
+        },
+         {
+          "name": "Simple and Consistent Navigation and Layout",
+          "value": 7.5,
+          "type": "black",
+          "level": "pink"
+        },
+           {
+          "name": "Error Notification in Layman Language",
+          "value": 7.5,
+          "type": "black",
+          "level": "pink"
+        },
+            {
+          "name": "Terms and Conditions in Non-technical Language",
+          "value": 7.5,
+          "type": "black",
+          "level": "pink"
+        }
+        ]
+        },
+        {
+          "name": "Robust",
+          "value": 7.5,
+          "type": "grey",
+          "level": "purple",
+          "children": [
+        {
+          "name": "ALT Tags for Images in the App",
+          "value": 7.5,
+          "type": "black",
+          "level": "pink"
+        },
+         {
+          "name": "Display Without Glare or Reflection",
+          "value": 7.5,
+          "type": "black",
+          "level": "pink"
+        },
+           {
+          "name": "Unbreakable Functionality of the App",
+          "value": 7.5,
+          "type": "black",
+          "level": "pink"
+        },
+            {
+          "name": "Show Right Keyboard at the Right Time",
+          "value": 7.5,
+          "type": "black",
+          "level": "pink"
+        }
+        ]
+        }
+      ]
+    },
+    {
+      "name": "Usability",
+      "value": 10,
+      "type": "grey",
+      "level": "green",
+      "children": [
+        {
+          "name": "Useful",
+          "value": 7.5,
+          "type": "grey",
+          "level": "orange",
+          "children": [
+        {
+          "name": "Volunteer Hub",
+          "value": 7.5,
+          "type": "black",
+          "level": "pink"
+        },
+         {
+          "name": "Information Hub",
+          "value": 7.5,
+          "type": "black",
+          "level": "pink"
+        },
+           {
+          "name": "Healthcare Hub",
+          "value": 7.5,
+          "type": "black",
+          "level": "pink"
+        },
+            {
+          "name": "Fraud Protection",
+          "value": 7.5,
+          "type": "black",
+          "level": "pink"
+        }
+        ]
+        },
+        {
+          "name": "Usable",
+          "value": 7.5,
+          "type": "grey",
+          "level": "orange",
+          "children": [
+        {
+          "name": "Clear Text Instead of Pictorial Stimuli",
+          "value": 7.5,
+          "type": "black",
+          "level": "pink"
+        },
+         {
+          "name": "Specific and Clear Instructions and Documentation",
+          "value": 7.5,
+          "type": "black",
+          "level": "pink"
+        },
+           {
+          "name": "Access the App Without Password",
+          "value": 7.5,
+          "type": "black",
+          "level": "pink"
+        },
+            {
+          "name": "1 Question or Feature per Interface",
+          "value": 7.5,
+          "type": "black",
+          "level": "pink"
+        }
+        ]
+        },
+        {
+          "name": "Desirable",
+          "value": 7.5,
+          "type": "grey",
+          "level": "orange",
+          "children": [
+        {
+          "name": "Balanced User Interface Design",
+          "value": 7.5,
+          "type": "black",
+          "level": "pink"
+        },
+         {
+          "name": "Font Preferences",
+          "value": 7.5,
+          "type": "black",
+          "level": "pink"
+        },
+           {
+          "name": "Allow to Select Preferred Theme",
+          "value": 7.5,
+          "type": "black",
+          "level": "pink"
+        },
+            {
+          "name": "Avoid Animations and Marquees",
+          "value": 7.5,
+          "type": "black",
+          "level": "pink"
+        }
+        ]
+        },
+        {
+          "name": "Findable",
+          "value": 7.5,
+          "type": "grey",
+          "level": "orange",
+          "children": [
+        {
+          "name": "Disable Inactive Objects",
+          "value": 7.5,
+          "type": "black",
+          "level": "pink"
+        },
+         {
+          "name": "Consistent Navigation",
+          "value": 7.5,
+          "type": "black",
+          "level": "pink"
+        },
+           {
+          "name": "Allow Vertical Scrolling",
+          "value": 7.5,
+          "type": "black",
+          "level": "pink"
+        },
+            {
+          "name": "Simple and Quick Sign-up Process",
+          "value": 7.5,
+          "type": "black",
+          "level": "pink"
+        }
+        ]
+        },
+        {
+          "name": "Credible",
+          "value": 7.5,
+          "type": "grey",
+          "level": "orange",
+          "children": [
+        {
+          "name": "Back Button as Safe Point of Return",
+          "value": 7.5,
+          "type": "black",
+          "level": "pink"
+        },
+         {
+          "name": "Prevent Error than Incorporating Recovery Mechanisms",
+          "value": 7.5,
+          "type": "black",
+          "level": "pink"
+        },
+           {
+          "name": "Avoid Links to Suspicious Resources",
+          "value": 7.5,
+          "type": "black",
+          "level": "pink"
+        },
+            {
+          "name": "Photo Verification of Users",
+          "value": 7.5,
+          "type": "black",
+          "level": "pink"
+        }
+        ]
+        },
+        {
+          "name": "Accessible",
+          "value": 7.5,
+          "type": "grey",
+          "level": "orange",
+          "children": [
+        {
+          "name": "Avoid Keypads on Smartphones",
+          "value": 7.5,
+          "type": "black",
+          "level": "pink"
+        },
+         {
+          "name": "Large Size of Components",
+          "value": 7.5,
+          "type": "black",
+          "level": "pink"
+        },
+           {
+          "name": "Increased Tap Sensitivity",
+          "value": 7.5,
+          "type": "black",
+          "level": "pink"
+        },
+            {
+          "name": "Incorporate Auto Captioning",
+          "value": 7.5,
+          "type": "black",
+          "level": "pink"
+        }
+        ]
+        },
+        {
+          "name": "Valuable",
+          "value": 7.5,
+          "type": "grey",
+          "level": "orange",
+          "children": [
+        {
+          "name": "Gamification Features",
+          "value": 7.5,
+          "type": "black",
+          "level": "pink"
+        },
+         {
+          "name": "Avoid Advertisements",
+          "value": 7.5,
+          "type": "black",
+          "level": "pink"
+        },
+           {
+          "name": "Physical Rewards to Enhance Motivation",
+          "value": 7.5,
+          "type": "black",
+          "level": "pink"
+        },
+            {
+          "name": "No Advertisements for Paid Versions",
+          "value": 7.5,
+          "type": "black",
+          "level": "pink"
+        }
+        ]
+        }
+      ]
+    }
+  ]
+};
+
+// set the dimensions and margins of the diagram
+const margin = {top: 20, right:320, bottom: 30, left: 90},
+      width  = 900 - margin.left - margin.right,
+      height = 1500 - margin.top - margin.bottom;
+
+// declares a tree layout and assigns the size
+const treemap = d3.tree().size([height, width]);
+
+//  assigns the data to a hierarchy using parent-child relationships
+let nodes = d3.hierarchy(treeData, d => d.children);
+
+// maps the node data to the tree layout
+nodes = treemap(nodes);
+
+// append the svg object to the body of the page
+// appends a 'group' element to 'svg'
+// moves the 'group' element to the top left margin
+const svg = d3.select("body").append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom),
+      g = svg.append("g")
+        .attr("transform",
+            "translate(" + margin.left + "," + margin.top + ")");
+
+// adds the links between the nodes
+const link = g.selectAll(".link")
+    .data( nodes.descendants().slice(1))
+  .enter().append("path")
+    .attr("class", "link")
+    .style("stroke", d => d.data.level)
+    .attr("d", d => {
+       return "M" + d.y + "," + d.x
+         + "C" + (d.y + d.parent.y) / 2 + "," + d.x
+         + " " + (d.y + d.parent.y) / 2 + "," + d.parent.x
+         + " " + d.parent.y + "," + d.parent.x;
+       });
+
+// adds each node as a group
+const node = g.selectAll(".node")
+    .data(nodes.descendants())
+    .enter().append("g")
+    .attr("class", d => "node" + (d.children ? " node--internal" : " node--leaf"))
+    .attr("transform", d => "translate(" + d.y + "," + d.x + ")");
+
+// adds the circle to the node
+node.append("circle")
+  .attr("r", d => d.data.value)
+  .style("stroke", d => d.data.type)
+  .style("fill", d => d.data.level);
+
+// adds the text to the node
+node.append("text")
+  .attr("dy", ".35em")
+  .attr("x", d => d.children ? (d.data.value + 5) * -1 : d.data.value + 5)
+  .attr("y", d => d.children && d.depth !== 0 ? -(d.data.value + 5) : d)
+  .style("text-anchor", d => d.children ? "end" : "start")
+  .text(d => d.data.name);
+
+  </script>
+
+  </body>
+  </html>
