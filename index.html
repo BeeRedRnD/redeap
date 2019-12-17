@@ -66,8 +66,8 @@
 div.tooltip {
             position: absolute;
             text-align: center;
-            width: 500px;
-            height: 400px;
+            width: 600px;
+            height: 500px;
             padding: 2px;
             font: 12px sans-serif;
             background: #4CAF50;
@@ -154,7 +154,16 @@ legend {
 
 <script>
 
-var solution = "General solution for everyone";
+
+//by default values in the pattern added by bilal
+var importance = "default importance ba";
+var problem = "default problem ba";
+var rationale= "default rationale ba";
+var solution= "default solution ba";
+var references = "default references ba";
+
+
+
 
 
 // this function contains json data for Perceivable Category only
@@ -807,19 +816,38 @@ const node = g.selectAll(".node")
                       if(d.data.name === "Each Character Entered Must be Heard")
                       {
                         //alert('Yupieee!!!');
-                        solution = "Mere marzi";
+
+                        importance = "&bigstar;&bigstar;&bigstar;";
+                        problem = "Older adults suffering from visual acuity can not make the best use of the applications.";
+                        rationale= "The interaction of older adults with the application only through tapping and reading text on the applications is good, but those with visual acuity might not be able to get the full meaning of certain things due to small text size etc.";
+                        solution= "1. The name of the character that is being entered must be heard.";
+                        references = "1. Daz-Bossini, J.-M. and Moreno, L. (2014), Accessibility to mobile interfaces for older people, Procedia Computer Science. <br/> 2. Mi, N., Cavuoto, L. A., Benson, K., Smith-Jackson, T. and Nussbaum, M. A. (2014), A heuristic checklist for an accessible smartphone interface design, Universal access in the information society 13(4).";
+
 
                       }
 
                     else if(d.data.name === "Easily Detectable Vibration Feedback"){
-                      solution= "Mere marzi 2";
+
+                    importance = "&bigstar;&bigstar;&bigstar;";
+                    problem= "The sense of touch also gets affected with ageing and current technology should cater for this as well";
+                    rationale= "Older adults might not be able to notice the existing vibration feedback. This might lead them to miss important calls or messages or reminders";
+                    solution= "1. User vibration feedback must use small high-speed adjustments to provide strong and easily detectable sensation (above threshold).";                    references= "1. Coelho, J. and Duarte, C., 2016. A literature survey on older adults’ use of social network services and social applications. Computers in Human Behavior, 58, pp.187-205. <br/> 2. Norval, C., Arnott, J.L. and Hanson, V.L., 2014, April. What’s on your mind?: investigating recommendations for inclusive social networking and older adults. In Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (pp. 3923-3932). ACM.";
+
                     }
 
                     else if(d.data.name === "Loud Sound of Notifications"){
-                      solution= "Mere marzi 3";
+                      importance = "&bigstar;&bigstar;&bigstar;";
+                      problem= "Older adults with auditory problems can not hear notifications with lower-frequency.";
+                      rationale= "The soft sound of notifications can be missed by older adults resulting in missing important stuff and things to do";
+                      solution= "1. The sound of the notifications must be loud in the app.";
+                      references= "1. Boyd, K., Bond, R.R., Nugent, C.D. and Donnelly, M.P., 2018. EasiSocial: Recommendations in the development and training of social media tools for older people. In EasiSocial: Recommendations in the development and training of social media tools for older people. <br/> 2. Ahmad, B., Richardson, I. and Beecham, S., 2017, November. A Systematic Literature Review of Social Network Systems for Older Adults. In International Conference on Product-Focused Software Process Improvement (pp. 482-496). Springer, Cham.";
                     }
                     else if(d.data.name === "Video Based Tutorials"){
-                      solution= "Mere marzi 4";
+                      importance = "&bigstar;&bigstar;&bigstar;";
+                      problem= "Older adults do not want to read long and tiresome documents to learn how to use the system or application.";
+                      rationale= "The use of alternative modalities to teach older adults how to use the app and technology in general has the potential to increase the uptake by older adults.";
+                      solution= "1. The app should have video based tutorials for older adults.";
+                      references= "1. de Barros, A.C., Leito, R. and Ribeiro, J., 2014. Design and evaluation of a mobile user interface for older adults: navigation, interaction and visual design recommendations. Procedia Computer Science. <br/> 2. Nurgalieva, L., Laconich, J.J.J., Baez, M., Casati, F. and Marchese, M., 2019. A systematic literature review of research-derived touchscreen design guidelines for older adults. IEEE Access, 7, pp.22035-22058 <br/> 3. Al-Razgan, M.S., Al-Khalifa, H.S., Al-Shahrani, M.D. and AlAjmi, H.H., 2012, November. Touch-based mobile phone interface guidelines and design recommendations for elderly people: A survey of the literature. In International Conference on Neural Information Processing (pp. 568-574). Springer, Berlin, Heidelberg. <br/> 4. Leito, R. and Silva, P.A., 2012, October. Target and spacing sizes for smartphone user interfaces for older adults: design patterns based on an evaluation with users. In Proceedings of the 19th Conference on Pattern Languages of Programs (p. 5). The Hillside Group. <br/> 5. \"Tried a lot of apps, finally landed here, it is a simple and useful app. The best part is the video tutorials.\"";
                     }
 
 
@@ -828,14 +856,17 @@ const node = g.selectAll(".node")
                     //     .style("left", (d3.event.pageX) + "px")
                     //     .style("top", (d3.event.pageY - 28) + "px");
 
+
+
+
                         div.html(
                           "<table>"+
-                          "<th colspan='2'>Problem</th>" +
-                          "<tr><td><b>Importance</b> </td><td>&bigstar;&bigstar;&bigstar; </td></tr>"+
-                          "<tr><td><b>Problem:</b> </td><td><i>Older adults suffering from visual acuity can not make the best use of the applications.</i> </td></tr>"+
-                          "<tr><td><b>Rationale:</b> </td><td><i>The interaction of older adults with the application only through tapping and reading text on the applications is good, but those with visual acuity might not be able to get the full meaning of certain things due to small text size etc.</i></td></tr>"+
-                          "<tr><td><b>Solution:</b> </td><td>1. The name of the character that is being entered must be heard. </td></tr>"+
-                          "<tr><td><b>References:</b> </td><td>1. Daz-Bossini, J.-M. and Moreno, L. (2014), Accessibility to mobile interfaces for older people, Procedia Computer Science. <br/> 2. Mi, N., Cavuoto, L. A., Benson, K., Smith-Jackson, T. and Nussbaum, M. A. (2014), A heuristic checklist for an accessible smartphone interface design, Universal access in the information society 13(4). </td></tr>"+
+                          "<th colspan='2'>"+d.data.name+"</th>" +
+                          "<tr><td><b>Importance</b> </td><td>"+importance+" </td></tr>"+
+                          "<tr><td><b>Problem:</b> </td><td><i>"+ problem +"</i> </td></tr>"+
+                          "<tr><td><b>Rationale:</b> </td><td><i>"+ rationale +"</i></td></tr>"+
+                          "<tr><td><b>Solution:</b> </td><td><i>"+ solution+"</i></td></tr>"+
+                          "<tr><td><b>References:</b> </td> <td>"+ references +"</td></tr>"+
                           "</table>"
                         ) //showing the name of the label on tool tip by bilal
                             .style("left", (d3.event.pageX) + "px")
@@ -966,7 +997,7 @@ function click(){
   <div class="first">
 
 
-    <fieldset style="height:174px;">
+    <fieldset style="height:210px;">
     <legend>Accessibility</legend>
     <p style="font-size:20px;">I would like to develop a smartphone app for older adults which is:</p>
 
@@ -985,7 +1016,7 @@ function click(){
 
 
 <div class="second">
-<fieldset style="height:174px;">
+<fieldset style="height:210px;">
 <legend>Usability</legend>
 <p style="font-size:20px;">I would like to develop a smartphone app for older adults which is:</p>
 <button class="button button11">Useful</button>
