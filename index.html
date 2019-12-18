@@ -588,6 +588,7 @@ function myUnderstandable()
 ////// Understandable Function End /////////
 
 
+
 ////// Robust Function Start ////////
 function myRobust()
 {
@@ -731,13 +732,1026 @@ function myRobust()
 ////// Robust Function End /////////
 
 
+////// Useful Function Start ////////
+function myUseful(){
+  alert('Useful Selected');
 
+  d3.select("svg").remove();
+
+
+
+  treeData = {
+    "name": "ReDEAP",
+    "value": 15,
+    "type": "red",
+    "level": "yellow",
+    "children": [
+
+      {
+        "name": "Accessibility",
+        "value": 10,
+        "type": "grey",
+        "level": "red",
+        "children": [
+          {
+            "name": "Perceiveable",
+            "value": 7.5,
+            "type": "grey",
+            "level": "purple",
+          },
+          {
+            "name": "Operable",
+            "value": 7.5,
+            "type": "grey",
+            "level": "purple",
+
+          },
+          {
+            "name": "Understandable",
+            "value": 7.5,
+            "type": "grey",
+            "level": "purple",
+
+          },
+          {
+            "name": "Robust",
+            "value": 7.5,
+            "type": "grey",
+            "level": "purple",
+          }
+        ]
+      },
+      {
+        "name": "Usability",
+        "value": 10,
+        "type": "grey",
+        "level": "green",
+        "children": [
+          {
+            "name": "Useful",
+            "value": 7.5,
+            "type": "grey",
+            "level": "orange",
+            "children": [
+       {
+         "name": "Volunteer Hub",
+         "value": 7.5,
+         "type": "black",
+         "level": "pink"
+       },
+        {
+         "name": "Information Hub",
+         "value": 7.5,
+         "type": "black",
+         "level": "pink"
+       },
+          {
+         "name": "Healthcare Hub",
+         "value": 7.5,
+         "type": "black",
+         "level": "pink"
+       },
+           {
+         "name": "Fraud Protection",
+         "value": 7.5,
+         "type": "black",
+         "level": "pink"
+       }
+       ]
+          },
+          {
+            "name": "Usable",
+            "value": 7.5,
+            "type": "grey",
+            "level": "orange",
+          },
+          {
+            "name": "Desirable",
+            "value": 7.5,
+            "type": "grey",
+            "level": "orange",
+
+          },
+          {
+            "name": "Findable",
+            "value": 7.5,
+            "type": "grey",
+            "level": "orange",
+
+          },
+          {
+            "name": "Credible",
+            "value": 7.5,
+            "type": "grey",
+            "level": "orange",
+
+          },
+          {
+            "name": "Accessible",
+            "value": 7.5,
+            "type": "grey",
+            "level": "orange",
+
+          },
+          {
+            "name": "Valuable",
+            "value": 7.5,
+            "type": "grey",
+            "level": "orange",
+
+          }
+        ]
+      }
+    ]
+  };
+
+  generateTree();
+
+
+
+
+}
+
+////// Useful Function End ///////
+
+
+////// Usable Function Start ////////
+function myUsable(){
+  alert('Usable Selected');
+
+  d3.select("svg").remove();
+
+
+
+  treeData = {
+    "name": "ReDEAP",
+    "value": 15,
+    "type": "red",
+    "level": "yellow",
+    "children": [
+
+      {
+        "name": "Accessibility",
+        "value": 10,
+        "type": "grey",
+        "level": "red",
+        "children": [
+          {
+            "name": "Perceiveable",
+            "value": 7.5,
+            "type": "grey",
+            "level": "purple",
+          },
+          {
+            "name": "Operable",
+            "value": 7.5,
+            "type": "grey",
+            "level": "purple",
+
+          },
+          {
+            "name": "Understandable",
+            "value": 7.5,
+            "type": "grey",
+            "level": "purple",
+
+          },
+          {
+            "name": "Robust",
+            "value": 7.5,
+            "type": "grey",
+            "level": "purple",
+          }
+        ]
+      },
+      {
+        "name": "Usability",
+        "value": 10,
+        "type": "grey",
+        "level": "green",
+        "children": [
+          {
+            "name": "Useful",
+            "value": 7.5,
+            "type": "grey",
+            "level": "orange",
+
+          },
+          {
+            "name": "Usable",
+            "value": 7.5,
+            "type": "grey",
+            "level": "orange",
+            "children": [
+       {
+         "name": "Clear Text Instead of Pictorial Stimuli",
+         "value": 7.5,
+         "type": "black",
+         "level": "pink"
+       },
+        {
+         "name": "Specific and Clear Instructions and Documentation",
+         "value": 7.5,
+         "type": "black",
+         "level": "pink"
+       },
+          {
+         "name": "Access the App Without Password",
+         "value": 7.5,
+         "type": "black",
+         "level": "pink"
+       },
+           {
+         "name": "1 Question or Feature per Interface",
+         "value": 7.5,
+         "type": "black",
+         "level": "pink"
+       }
+       ]
+          },
+          {
+            "name": "Desirable",
+            "value": 7.5,
+            "type": "grey",
+            "level": "orange",
+
+          },
+          {
+            "name": "Findable",
+            "value": 7.5,
+            "type": "grey",
+            "level": "orange",
+
+          },
+          {
+            "name": "Credible",
+            "value": 7.5,
+            "type": "grey",
+            "level": "orange",
+
+          },
+          {
+            "name": "Accessible",
+            "value": 7.5,
+            "type": "grey",
+            "level": "orange",
+
+          },
+          {
+            "name": "Valuable",
+            "value": 7.5,
+            "type": "grey",
+            "level": "orange",
+
+          }
+        ]
+      }
+    ]
+  };
+
+  generateTree();
+
+
+
+}
+
+////// Usable Function End ///////
+
+
+////// Desirable Function Start ////////
+function myDesirable(){
+  alert('Desirable Selected');
+
+  d3.select("svg").remove();
+
+
+
+  treeData = {
+    "name": "ReDEAP",
+    "value": 15,
+    "type": "red",
+    "level": "yellow",
+    "children": [
+
+      {
+        "name": "Accessibility",
+        "value": 10,
+        "type": "grey",
+        "level": "red",
+        "children": [
+          {
+            "name": "Perceiveable",
+            "value": 7.5,
+            "type": "grey",
+            "level": "purple",
+          },
+          {
+            "name": "Operable",
+            "value": 7.5,
+            "type": "grey",
+            "level": "purple",
+
+          },
+          {
+            "name": "Understandable",
+            "value": 7.5,
+            "type": "grey",
+            "level": "purple",
+
+          },
+          {
+            "name": "Robust",
+            "value": 7.5,
+            "type": "grey",
+            "level": "purple",
+          }
+        ]
+      },
+      {
+        "name": "Usability",
+        "value": 10,
+        "type": "grey",
+        "level": "green",
+        "children": [
+          {
+            "name": "Useful",
+            "value": 7.5,
+            "type": "grey",
+            "level": "orange",
+
+          },
+          {
+            "name": "Usable",
+            "value": 7.5,
+            "type": "grey",
+            "level": "orange",
+
+          },
+          {
+            "name": "Desirable",
+            "value": 7.5,
+            "type": "grey",
+            "level": "orange",
+            "children": [
+       {
+         "name": "Balanced User Interface Design",
+         "value": 7.5,
+         "type": "black",
+         "level": "pink"
+       },
+        {
+         "name": "Font Preferences",
+         "value": 7.5,
+         "type": "black",
+         "level": "pink"
+       },
+          {
+         "name": "Allow to Select Preferred Theme",
+         "value": 7.5,
+         "type": "black",
+         "level": "pink"
+       },
+           {
+         "name": "Avoid Animations and Marquees",
+         "value": 7.5,
+         "type": "black",
+         "level": "pink"
+       }
+       ]
+
+          },
+          {
+            "name": "Findable",
+            "value": 7.5,
+            "type": "grey",
+            "level": "orange",
+
+          },
+          {
+            "name": "Credible",
+            "value": 7.5,
+            "type": "grey",
+            "level": "orange",
+
+          },
+          {
+            "name": "Accessible",
+            "value": 7.5,
+            "type": "grey",
+            "level": "orange",
+
+          },
+          {
+            "name": "Valuable",
+            "value": 7.5,
+            "type": "grey",
+            "level": "orange",
+
+          }
+        ]
+      }
+    ]
+  };
+
+  generateTree();
+
+}
+
+////// Desirable Function End ///////
+
+////// Findable Function Start ////////
+function myFindable(){
+  alert('Findable Selected');
+
+  d3.select("svg").remove();
+
+
+
+  treeData = {
+    "name": "ReDEAP",
+    "value": 15,
+    "type": "red",
+    "level": "yellow",
+    "children": [
+
+      {
+        "name": "Accessibility",
+        "value": 10,
+        "type": "grey",
+        "level": "red",
+        "children": [
+          {
+            "name": "Perceiveable",
+            "value": 7.5,
+            "type": "grey",
+            "level": "purple",
+          },
+          {
+            "name": "Operable",
+            "value": 7.5,
+            "type": "grey",
+            "level": "purple",
+
+          },
+          {
+            "name": "Understandable",
+            "value": 7.5,
+            "type": "grey",
+            "level": "purple",
+
+          },
+          {
+            "name": "Robust",
+            "value": 7.5,
+            "type": "grey",
+            "level": "purple",
+          }
+        ]
+      },
+      {
+        "name": "Usability",
+        "value": 10,
+        "type": "grey",
+        "level": "green",
+        "children": [
+          {
+            "name": "Useful",
+            "value": 7.5,
+            "type": "grey",
+            "level": "orange",
+
+          },
+          {
+            "name": "Usable",
+            "value": 7.5,
+            "type": "grey",
+            "level": "orange",
+
+          },
+          {
+            "name": "Desirable",
+            "value": 7.5,
+            "type": "grey",
+            "level": "orange",
+
+
+          },
+          {
+            "name": "Findable",
+            "value": 7.5,
+            "type": "grey",
+            "level": "orange",
+
+            "children": [
+       {
+         "name": "Disable Inactive Objects",
+         "value": 7.5,
+         "type": "black",
+         "level": "pink"
+       },
+        {
+         "name": "Consistent Navigation",
+         "value": 7.5,
+         "type": "black",
+         "level": "pink"
+       },
+          {
+         "name": "Allow Vertical Scrolling",
+         "value": 7.5,
+         "type": "black",
+         "level": "pink"
+       },
+           {
+         "name": "Simple and Quick Sign-up Process",
+         "value": 7.5,
+         "type": "black",
+         "level": "pink"
+       }
+       ]
+
+          },
+          {
+            "name": "Credible",
+            "value": 7.5,
+            "type": "grey",
+            "level": "orange",
+
+          },
+          {
+            "name": "Accessible",
+            "value": 7.5,
+            "type": "grey",
+            "level": "orange",
+
+          },
+          {
+            "name": "Valuable",
+            "value": 7.5,
+            "type": "grey",
+            "level": "orange",
+
+          }
+        ]
+      }
+    ]
+  };
+
+  generateTree();
+}
+
+////// Findable Function End ///////
+
+
+////// Credible Function Start ////////
+function myCredible(){
+  alert('Creible Selected');
+
+  d3.select("svg").remove();
+
+
+
+  treeData = {
+    "name": "ReDEAP",
+    "value": 15,
+    "type": "red",
+    "level": "yellow",
+    "children": [
+
+      {
+        "name": "Accessibility",
+        "value": 10,
+        "type": "grey",
+        "level": "red",
+        "children": [
+          {
+            "name": "Perceiveable",
+            "value": 7.5,
+            "type": "grey",
+            "level": "purple",
+          },
+          {
+            "name": "Operable",
+            "value": 7.5,
+            "type": "grey",
+            "level": "purple",
+
+          },
+          {
+            "name": "Understandable",
+            "value": 7.5,
+            "type": "grey",
+            "level": "purple",
+
+          },
+          {
+            "name": "Robust",
+            "value": 7.5,
+            "type": "grey",
+            "level": "purple",
+          }
+        ]
+      },
+      {
+        "name": "Usability",
+        "value": 10,
+        "type": "grey",
+        "level": "green",
+        "children": [
+          {
+            "name": "Useful",
+            "value": 7.5,
+            "type": "grey",
+            "level": "orange",
+
+          },
+          {
+            "name": "Usable",
+            "value": 7.5,
+            "type": "grey",
+            "level": "orange",
+
+          },
+          {
+            "name": "Desirable",
+            "value": 7.5,
+            "type": "grey",
+            "level": "orange",
+
+
+          },
+          {
+            "name": "Findable",
+            "value": 7.5,
+            "type": "grey",
+            "level": "orange",
+
+
+
+          },
+          {
+            "name": "Credible",
+            "value": 7.5,
+            "type": "grey",
+            "level": "orange",
+
+            "children": [
+       {
+         "name": "Back Button as Safe Point of Return",
+         "value": 7.5,
+         "type": "black",
+         "level": "pink"
+       },
+        {
+         "name": "Prevent Error than Incorporating Recovery Mechanisms",
+         "value": 7.5,
+         "type": "black",
+         "level": "pink"
+       },
+          {
+         "name": "Avoid Links to Suspicious Resources",
+         "value": 7.5,
+         "type": "black",
+         "level": "pink"
+       },
+           {
+         "name": "Photo Verification of Users",
+         "value": 7.5,
+         "type": "black",
+         "level": "pink"
+       }
+       ]
+
+          },
+          {
+            "name": "Accessible",
+            "value": 7.5,
+            "type": "grey",
+            "level": "orange",
+
+          },
+          {
+            "name": "Valuable",
+            "value": 7.5,
+            "type": "grey",
+            "level": "orange",
+
+          }
+        ]
+      }
+    ]
+  };
+
+  generateTree();
+
+
+}
+
+////// Credible Function End ///////
+
+////// Accessible Function Start ////////
+function myAccessible(){
+  alert('Accessible Selected');
+
+  d3.select("svg").remove();
+
+
+
+  treeData = {
+    "name": "ReDEAP",
+    "value": 15,
+    "type": "red",
+    "level": "yellow",
+    "children": [
+
+      {
+        "name": "Accessibility",
+        "value": 10,
+        "type": "grey",
+        "level": "red",
+        "children": [
+          {
+            "name": "Perceiveable",
+            "value": 7.5,
+            "type": "grey",
+            "level": "purple",
+          },
+          {
+            "name": "Operable",
+            "value": 7.5,
+            "type": "grey",
+            "level": "purple",
+
+          },
+          {
+            "name": "Understandable",
+            "value": 7.5,
+            "type": "grey",
+            "level": "purple",
+
+          },
+          {
+            "name": "Robust",
+            "value": 7.5,
+            "type": "grey",
+            "level": "purple",
+          }
+        ]
+      },
+      {
+        "name": "Usability",
+        "value": 10,
+        "type": "grey",
+        "level": "green",
+        "children": [
+          {
+            "name": "Useful",
+            "value": 7.5,
+            "type": "grey",
+            "level": "orange",
+
+          },
+          {
+            "name": "Usable",
+            "value": 7.5,
+            "type": "grey",
+            "level": "orange",
+
+          },
+          {
+            "name": "Desirable",
+            "value": 7.5,
+            "type": "grey",
+            "level": "orange",
+
+
+          },
+          {
+            "name": "Findable",
+            "value": 7.5,
+            "type": "grey",
+            "level": "orange",
+
+
+
+          },
+          {
+            "name": "Credible",
+            "value": 7.5,
+            "type": "grey",
+            "level": "orange",
+
+
+
+          },
+          {
+            "name": "Accessible",
+            "value": 7.5,
+            "type": "grey",
+            "level": "orange",
+
+            "children": [
+       {
+         "name": "Avoid Keypads on Smartphones",
+         "value": 7.5,
+         "type": "black",
+         "level": "pink"
+       },
+        {
+         "name": "Large Size of Components",
+         "value": 7.5,
+         "type": "black",
+         "level": "pink"
+       },
+          {
+         "name": "Increased Tap Sensitivity",
+         "value": 7.5,
+         "type": "black",
+         "level": "pink"
+       },
+           {
+         "name": "Incorporate Auto Captioning",
+         "value": 7.5,
+         "type": "black",
+         "level": "pink"
+       }
+       ]
+
+          },
+          {
+            "name": "Valuable",
+            "value": 7.5,
+            "type": "grey",
+            "level": "orange",
+
+          }
+        ]
+      }
+    ]
+  };
+
+  generateTree();
+
+
+}
+
+////// Accessible Function End ///////
+
+////// Valuable Function Start ////////
+function myValuable(){
+  alert('Valuable Selected');
+
+  d3.select("svg").remove();
+
+
+
+  treeData = {
+    "name": "ReDEAP",
+    "value": 15,
+    "type": "red",
+    "level": "yellow",
+    "children": [
+
+      {
+        "name": "Accessibility",
+        "value": 10,
+        "type": "grey",
+        "level": "red",
+        "children": [
+          {
+            "name": "Perceiveable",
+            "value": 7.5,
+            "type": "grey",
+            "level": "purple",
+          },
+          {
+            "name": "Operable",
+            "value": 7.5,
+            "type": "grey",
+            "level": "purple",
+
+          },
+          {
+            "name": "Understandable",
+            "value": 7.5,
+            "type": "grey",
+            "level": "purple",
+
+          },
+          {
+            "name": "Robust",
+            "value": 7.5,
+            "type": "grey",
+            "level": "purple",
+          }
+        ]
+      },
+      {
+        "name": "Usability",
+        "value": 10,
+        "type": "grey",
+        "level": "green",
+        "children": [
+          {
+            "name": "Useful",
+            "value": 7.5,
+            "type": "grey",
+            "level": "orange",
+
+          },
+          {
+            "name": "Usable",
+            "value": 7.5,
+            "type": "grey",
+            "level": "orange",
+
+          },
+          {
+            "name": "Desirable",
+            "value": 7.5,
+            "type": "grey",
+            "level": "orange",
+
+
+          },
+          {
+            "name": "Findable",
+            "value": 7.5,
+            "type": "grey",
+            "level": "orange",
+
+
+
+          },
+          {
+            "name": "Credible",
+            "value": 7.5,
+            "type": "grey",
+            "level": "orange",
+
+
+
+          },
+          {
+            "name": "Accessible",
+            "value": 7.5,
+            "type": "grey",
+            "level": "orange",
+
+
+
+          },
+          {
+            "name": "Valuable",
+            "value": 7.5,
+            "type": "grey",
+            "level": "orange",
+
+            "children": [
+       {
+         "name": "Gamification Features",
+         "value": 7.5,
+         "type": "black",
+         "level": "pink"
+       },
+        {
+         "name": "Avoid Advertisements",
+         "value": 7.5,
+         "type": "black",
+         "level": "pink"
+       },
+          {
+         "name": "Physical Rewards to Enhance Motivation",
+         "value": 7.5,
+         "type": "black",
+         "level": "pink"
+       },
+           {
+         "name": "No Advertisements for Paid Versions",
+         "value": 7.5,
+         "type": "black",
+         "level": "pink"
+       }
+       ]
+
+          }
+        ]
+      }
+    ]
+  };
+
+  generateTree();
+
+}
+
+////// Valuable Function End ///////
 
 
 
 
 // generates the tree
 function generateTree() {
+
+
 
 
 // set the dimensions and margins of the diagram
@@ -1001,14 +2015,14 @@ function click(){
     <legend>Accessibility</legend>
     <p style="font-size:20px;">I would like to develop a smartphone app for older adults which is:</p>
 
-    <button class="button" onclick="myPerceiveable()">Perceivable</button>
+    <button class="button" onclick="myPerceiveable()" title="present information and user interface components so that users can perceive!">Perceivable</button>
 
-    <button class="button button2" onclick="myOperable()">Operable</button>
+    <button class="button button2" onclick="myOperable()" title="make user interface and navigation operable for users!">Operable</button>
 
 
-    <button class="button button3" onclick="myUnderstandable()">Understandable</button>
+    <button class="button button3" onclick="myUnderstandable()" title="make information and user interface understandble for users! ">Understandable</button>
 
-    <button class="button button5" onclick="myRobust()">Robust</button>
+    <button class="button button5" onclick="myRobust()" title="make content robust enough to ensure reliability for users!">Robust</button>
     </fieldset>
 
 </div>
@@ -1019,19 +2033,21 @@ function click(){
 <fieldset style="height:210px;">
 <legend>Usability</legend>
 <p style="font-size:20px;">I would like to develop a smartphone app for older adults which is:</p>
-<button class="button button11">Useful</button>
-<button class="button button12">Usable</button>
-<button class="button button13">Desirable</button>
-<button class="button button14">Findable</button>
-<button class="button button15">Credible</button>
-<button class="button button12">Accessible</button>
-<button class="button button13">Valuable</button>
+<button class="button button11" onclick="myUseful()" title="make the smartphone app fill a need of users!">Useful</button>
+<button class="button button12" onclick="myUsable()" title="make the smartphone app simple and easy to use!">Usable</button>
+<button class="button button13" onclick="myDesirable()" title="make the visual aesthetics of the smartphone app attractive!">Desirable</button>
+<button class="button button14" onclick="myFindable()" title="make the information in the app findable and easy to navigate!">Findable</button>
+<button class="button button15" onclick="myCredible()" title="make the information in the app trustworthy!">Credible</button>
+<button class="button button12" onclick="myAccessible()" title="make the app useful for disabled users!">Accessible</button>
+<button class="button button13" onclick="myValuable()" title="make the app deliver value to users!">Valuable</button>
 </fieldset>
 
 </div>
 
 
 </div>
+
+
 
 
 
