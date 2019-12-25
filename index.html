@@ -1,147 +1,99 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <title>ReDEAP Version 1</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="tree-boxes.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Hello, world!</title>
+
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.12.2/d3.min.js"></script>
     <script src="tree-boxes.js" type="text/javascript"></script>
-    <link rel="stylesheet" type="text/css" href="ba_test.css">
-    <style>
-    .button {
-      background-color: #4CAF50; /* Green */
-      border: none;
-      color: white;
-      padding: 15px 32px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      margin: 4px 2px;
-      cursor: pointer;
-    }
+    <link rel="stylesheet" type="text/css" href="tree-boxes.css">
 
-    .button2 {background-color: #008CBA;} /* Blue */
-    .button3 {background-color: #f44336;} /* Red */
-    .button4 {background-color: #e7e7e7; color: black;} /* Gray */
-    .button5 {background-color: #555555;} /* Black */
 
-    .button11 {
-  background-color: white;
-  color: black;
-  border: 2px solid #4CAF50;
+
+  <style>
+
+    /* Code added by Bilal start*/
+
+.social-icon{
+  margin: 20px 10px;
 }
 
-.button12 {
-  background-color: white;
-  color: black;
-  border: 2px solid #008CBA;
-}
-
-.button13 {
-  background-color: white;
-  color: black;
-  border: 2px solid #f44336;
-}
-
-.button14 {
-  background-color: white;
-  color: black;
-  border: 2px solid #e7e7e7;
-}
-
-.button15 {
-  background-color: white;
-  color: black;
-  border: 2px solid #555555;
-}
-
-
-/* Code added by Bilal start*/
-
-div.tooltip {
-            position: absolute;
-            text-align: center;
-            width: 600px;
-            height: 500px;
-            padding: 2px;
-            font: 12px sans-serif;
-            background: #4CAF50;
-            border: 2px;
-            border-radius: 8px;
-            border-color: black;
-            pointer-events: none;
-            border-style: solid;
-            border-width: 3px;
-            opacity: 0.5;
-
-        }
-/* Code added by Bilal end */
-
-
-
-table {
-  border-collapse: collapse;
-  width: 100%;
-}
-
-th, td {
-  text-align: left;
-  padding: 8px;
-  font-size: 14px;
-}
-
-tr:nth-child(even){background-color: #f44336;}
-
-th {
-  background-color: #4CAF50;
-  color: black;
-  font-size: 16px;
+#footer{
+  padding: 7% 15%;
   text-align: center;
 }
 
-.checked {
-  color: orange;
+#collaborators{
+  padding: 7% 15%;
+  text-align: center;
+  background-color: #007BFF;
+  color: #fff;
+
 }
 
-legend {
-  padding: 0.2em 0.5em;
-  border:1px solid green;
-  color:#008CBA;;
-  font-size:20px;
-  text-align:right;
+.collaborator-img{
+  width: 15%;
+  border-radius: 100%;
 
-
-  }
-
-
-.buttoncontainer{
-  width: 100%;
-}
-
-.first, .second{
-  width: 50%;
-  float: left;
 }
 
 
+    div.tooltip {
+                position: absolute;
+                text-align: center;
+                width: 420px;
+                height: 500px;
+                padding: 2px;
+                font: 12px sans-serif;
+                background: #007BFF;
+                border: 2px;
+                border-radius: 8px;
+                border-color: black;
+                pointer-events: none;
+                border-style: solid;
+                border-width: 3px;
+                opacity: 0.5;
 
-.headerparagraph{
-
-  color:#008CBA;;
-  font-size:25px;
-  text-align:center;
-
-  }
+            }
+    /* Code added by Bilal end */
 
 
 
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 8px;
+      font-size: 14px;
+
+
+    }
+
+    tr:nth-child(even){background-color: #6C757D; color:black;}
+
+    th {
+      background-color: #007BFF;
+      color: black;
+      font-size: 16px;
+      text-align: center;
+    }
 
   </style>
+
+
 
   </head>
   <body>
@@ -150,19 +102,175 @@ legend {
 
 
 
+    <nav class="navbar  navbar-expand-lg navbar-dark bg-primary" >
+  <a class="navbar-brand" href="#">ReDEAP</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#collaborators">Collaborators</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Downloads</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Videos</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Publications
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">P1</a>
+          <a class="dropdown-item" href="#">P2</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Technical Reports</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#footer">Contact</a>
+      </li>
+      <!--
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li>
+      -->
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search..." aria-label="Search">
+      <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+
+<div class="row" style="margin-left:2px;margin-right:0px;">
+
+<div class="col-md-4" style="background-color:#F7F7F9; border:  1px solid;" >
+<br/>
+1. I would like to develop a smartphone app for older adults which is accessible:
+<br/>
+<button type="button" class="btn btn-primary" onclick="myPerceiveable();">Perceivable</button>
+<button type="button" class="btn btn-secondary" onclick="myOperable()">Operable</button>
+<button type="button" class="btn btn-success" onclick="myUnderstandable()">Understandable</button>
+<button type="button" class="btn btn-danger" onclick="myRobust()">Robust</button>
+
+<br/><br/>
+2. I would like to develop a smartphone app for older adults which is usable:
+<br/>
+<button type="button" class="btn btn-primary" onclick="myUseful()">Useful</button>
+<button type="button" class="btn btn-secondary" onclick="myUsable()">Usable</button>
+<button type="button" class="btn btn-success" onclick="myDesirable()">Desirable</button>
+<button type="button" class="btn btn-danger" onclick="myFindable()">Findable</button>
+<button type="button" class="btn btn-warning" onclick="myCredible()">Credible</button>
+<button type="button" class="btn btn-info" onclick="myAccessible()">Accessible</button>
+<button type="button" class="btn btn-primary" onclick="myValuable()">Valuable</button>
+
+<br/><br/>
+Third Question
+<br/>
+<button type="button" class="btn btn-primary">Option 1</button>
+<button type="button" class="btn btn-secondary">Option 2</button>
+<button type="button" class="btn btn-success">Option 3</button>
+<button type="button" class="btn btn-danger">Option 4</button>
+
+<br/><br/>
+Fourth Question
+<br/>
+<button type="button" class="btn btn-primary">Option 1</button>
+<button type="button" class="btn btn-secondary">Option 2</button>
+<button type="button" class="btn btn-success">Option 3</button>
+<button type="button" class="btn btn-danger">Option 4</button>
+
+<br/><br/>
+Fifth Question
+<br/>
+<button type="button" class="btn btn-primary">Option 1</button>
+<button type="button" class="btn btn-secondary">Option 2</button>
+<button type="button" class="btn btn-success">Option 3</button>
+<button type="button" class="btn btn-danger">Option 4</button>
+
+</div>
+
+
+<div class="col-md-8" style="background-color:white; border:  1px solid;" id="chaska">
+
+<br/>
+
+</div>
+
+</div>
+
+
+
+
+  <section id="collaborators">
+
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="2000">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h1>Prof. Ita Richardson </h1>
+          <h3>Principal Investigator</h3>
+          <img class="collaborator-img" src="https://ul.ie/pbl/sites/default/files/Ita%20Pic.png" alt="ita-pic" />
+        </div>
+        <div class="carousel-item">
+          <h1>Dr. Sarah Beecham </h1>
+          <h3>Research Fellow</h3>
+          <img class="collaborator-img" src="https://www.lero.ie/sites/default/files/styles/user_picture_style/public/pictures/picture-52-1493650283.jpg?itok=x8H9dR23" alt="ita-pic" />
+        </div>
+        <div class="carousel-item">
+          <h1>Bilal Ahmad </h1>
+          <h3>Doctoral Researcher</h3>
+          <img class="collaborator-img" src="https://www.lero.ie/sites/default/files/styles/user_picture_style/public/pictures/picture-51-1506950895.jpg?itok=4YZSQpiE" alt="ita-pic" />
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+
+
+
+
+  </section>
+
+
+
+<footer id="footer">
+
+
+  <i class="social-icon fa fa-facebook-f" style="font-size:24px"></i>
+  <i class="social-icon fa fa-linkedin-square" style="font-size:24px"></i>
+  <i class="social-icon fa fa-youtube" style="font-size:24px"></i>
+  <i class="social-icon fa fa-instagram" style="font-size:24px"></i>
+  <i class="social-icon fa fa-twitter" style="font-size:24px"></i>
+  <br/>
+
+<p>&copy; Copyright 2019 ReDEAP</p>
+
+</footer>
+
+
+
+
+
+
+
 
 
 <script>
-
-
-//by default values in the pattern added by bilal
-var importance = "default importance ba";
-var problem = "default problem ba";
-var rationale= "default rationale ba";
-var solution= "default solution ba";
-var references = "default references ba";
-
-
 
 
 
@@ -183,7 +291,7 @@ function myPerceiveable()
     "children": [
 
       {
-        "name": "Accessibilitzzzttty",
+        "name": "Accessibility",
         "value": 10,
         "type": "grey",
         "level": "red",
@@ -1748,309 +1856,210 @@ function myValuable(){
 
 
 
-// generates the tree
 function generateTree() {
 
 
+  // set the dimensions and margins of the diagram
+  const margin = {top: 0, right:410, bottom: 30, left: 79},
+        width  = 800 - margin.left - margin.right,
+        height = 500 - margin.top - margin.bottom;
 
+  // declares a tree layout and assigns the size
+  const treemap = d3.tree().size([height, width]);
 
-// set the dimensions and margins of the diagram
-const margin = {top: 20, right:320, bottom: 30, left: 90},
-      width  = 900 - margin.left - margin.right,
-      height = 1500 - margin.top - margin.bottom;
-
-// declares a tree layout and assigns the size
-const treemap = d3.tree().size([height, width]);
-
-//  assigns the data to a hierarchy using parent-child relationships
-let nodes = d3.hierarchy(treeData, d => d.children);
-
-
-
-// maps the node data to the tree layout
-nodes = treemap(nodes);
-
-// append the svg object to the body of the page
-// appends a 'group' element to 'svg'
-// moves the 'group' element to the top left margin
-const svg = d3.select("body").append("svg")
-        .attr("width", width + margin.left + margin.right)
-        .attr("height", height + margin.top + margin.bottom),
-      g = svg.append("g")
-        .attr("transform",
-            "translate(" + margin.left + "," + margin.top + ")");
-
-// adds the links between the nodes
-const link = g.selectAll(".link")
-    .data( nodes.descendants().slice(1))
-  .enter().append("path")
-    .attr("class", "link")
-    .style("stroke", d => d.data.level)
-    .attr("d", d => {
-       return "M" + d.y + "," + d.x
-         + "C" + (d.y + d.parent.y) / 2 + "," + d.x
-         + " " + (d.y + d.parent.y) / 2 + "," + d.parent.x
-         + " " + d.parent.y + "," + d.parent.x;
-       });
-
-
-       // Define the div for the tooltip
-        var div = d3.select("body").append("div")
-            .attr("class", "tooltip")
-            .style("opacity", 0);
+  //  assigns the data to a hierarchy using parent-child relationships
+  let nodes = d3.hierarchy(treeData, d => d.children);
 
 
 
-            // // declare variables to be used for showing in the tootltip
-            // var solution ="Do this, do that";
+  // maps the node data to the tree layout
+  nodes = treemap(nodes);
 
-// adds each node as a group
-const node = g.selectAll(".node")
-    .data(nodes.descendants())
-    .enter().append("g")
-    .attr("class", d => "node" + (d.children ? " node--internal" : " node--leaf"))
-    .attr("transform", d => "translate(" + d.y + "," + d.x + ")")
-    .on("mouseover", function (d) { //added by bilal
-                  //this code is showing the tooltip by putting the mouse over
-                  if(d.children == null && d.depth==3){ // this is working, it is checking if the node is leaf, button
-                    // the problem is that the previous level also has some leafs
-                    // so I think I need to check the level as well ...
-                    // this means that if level=3 or something than show only the tooltip ...
-                    // It is also checking if the depth of the node is level 3, then show the tooltip
-                    // otherwise don't show the tooltip :)
+  // append the svg object to the body of the page
+  // appends a 'group' element to 'svg'
+  // moves the 'group' element to the top left margin
+  const svg = d3.select("#chaska").append("svg")
+          .attr("width", width + margin.left + margin.right)
+          .attr("height", height + margin.top + margin.bottom),
+        g = svg.append("g")
+          .attr("transform",
+              "translate(" + margin.left + "," + margin.top + ")");
 
-                    div.transition()
-                        .duration(200)
-                        .style("opacity", .9);
+  // adds the links between the nodes
+  const link = g.selectAll(".link")
+      .data( nodes.descendants().slice(1))
+    .enter().append("path")
+      .attr("class", "link")
+      .style("stroke", d => d.data.level)
+      .attr("d", d => {
+         return "M" + d.y + "," + d.x
+           + "C" + (d.y + d.parent.y) / 2 + "," + d.x
+           + " " + (d.y + d.parent.y) / 2 + "," + d.parent.x
+           + " " + d.parent.y + "," + d.parent.x;
+         });
 
-                      // I think I need to check which node is Selected
-                      // and then compare it in coniditon
-                      // and based on that create a string that contains the description ...
 
-                      if(d.data.name === "Each Character Entered Must be Heard")
-                      {
-                        //alert('Yupieee!!!');
+         // Define the div for the tooltip
+          var div = d3.select("body").append("div")
+              .attr("class", "tooltip")
+              .style("opacity", 0);
 
+
+
+              // // declare variables to be used for showing in the tootltip
+              // var solution ="Do this, do that";
+
+  // adds each node as a group
+  const node = g.selectAll(".node")
+      .data(nodes.descendants())
+      .enter().append("g")
+      .attr("class", d => "node" + (d.children ? " node--internal" : " node--leaf"))
+      .attr("transform", d => "translate(" + d.y + "," + d.x + ")")
+      .on("mouseover", function (d) { //added by bilal
+                    //this code is showing the tooltip by putting the mouse over
+                    if(d.children == null && d.depth==3){ // this is working, it is checking if the node is leaf, button
+                      // the problem is that the previous level also has some leafs
+                      // so I think I need to check the level as well ...
+                      // this means that if level=3 or something than show only the tooltip ...
+                      // It is also checking if the depth of the node is level 3, then show the tooltip
+                      // otherwise don't show the tooltip :)
+
+                      div.transition()
+                          .duration(200)
+                          .style("opacity", .9);
+
+                        // I think I need to check which node is Selected
+                        // and then compare it in coniditon
+                        // and based on that create a string that contains the description ...
+
+                        if(d.data.name === "Each Character Entered Must be Heard")
+                        {
+                          //alert('Yupieee!!!');
+
+                          importance = "&bigstar;&bigstar;&bigstar;";
+                          problem = "Older adults suffering from visual acuity can not make the best use of the applications.";
+                          rationale= "The interaction of older adults with the application only through tapping and reading text on the applications is good, but those with visual acuity might not be able to get the full meaning of certain things due to small text size etc.";
+                          solution= "1. The name of the character that is being entered must be heard.";
+                          references = "1. Daz-Bossini, J.-M. and Moreno, L. (2014), Accessibility to mobile interfaces for older people, Procedia Computer Science. <br/> 2. Mi, N., Cavuoto, L. A., Benson, K., Smith-Jackson, T. and Nussbaum, M. A. (2014), A heuristic checklist for an accessible smartphone interface design, Universal access in the information society 13(4).";
+
+
+                        }
+
+                      else if(d.data.name === "Easily Detectable Vibration Feedback"){
+
+                      importance = "&bigstar;&bigstar;&bigstar;";
+                      problem= "The sense of touch also gets affected with ageing and current technology should cater for this as well";
+                      rationale= "Older adults might not be able to notice the existing vibration feedback. This might lead them to miss important calls or messages or reminders";
+                      solution= "1. User vibration feedback must use small high-speed adjustments to provide strong and easily detectable sensation (above threshold).";                    references= "1. Coelho, J. and Duarte, C., 2016. A literature survey on older adults’ use of social network services and social applications. Computers in Human Behavior, 58, pp.187-205. <br/> 2. Norval, C., Arnott, J.L. and Hanson, V.L., 2014, April. What’s on your mind?: investigating recommendations for inclusive social networking and older adults. In Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (pp. 3923-3932). ACM.";
+
+                      }
+
+                      else if(d.data.name === "Loud Sound of Notifications"){
                         importance = "&bigstar;&bigstar;&bigstar;";
-                        problem = "Older adults suffering from visual acuity can not make the best use of the applications.";
-                        rationale= "The interaction of older adults with the application only through tapping and reading text on the applications is good, but those with visual acuity might not be able to get the full meaning of certain things due to small text size etc.";
-                        solution= "1. The name of the character that is being entered must be heard.";
-                        references = "1. Daz-Bossini, J.-M. and Moreno, L. (2014), Accessibility to mobile interfaces for older people, Procedia Computer Science. <br/> 2. Mi, N., Cavuoto, L. A., Benson, K., Smith-Jackson, T. and Nussbaum, M. A. (2014), A heuristic checklist for an accessible smartphone interface design, Universal access in the information society 13(4).";
-
-
+                        problem= "Older adults with auditory problems can not hear notifications with lower-frequency.";
+                        rationale= "The soft sound of notifications can be missed by older adults resulting in missing important stuff and things to do";
+                        solution= "1. The sound of the notifications must be loud in the app.";
+                        references= "1. Boyd, K., Bond, R.R., Nugent, C.D. and Donnelly, M.P., 2018. EasiSocial: Recommendations in the development and training of social media tools for older people. In EasiSocial: Recommendations in the development and training of social media tools for older people. <br/> 2. Ahmad, B., Richardson, I. and Beecham, S., 2017, November. A Systematic Literature Review of Social Network Systems for Older Adults. In International Conference on Product-Focused Software Process Improvement (pp. 482-496). Springer, Cham.";
+                      }
+                      else if(d.data.name === "Video Based Tutorials"){
+                        importance = "&bigstar;&bigstar;&bigstar;";
+                        problem= "Older adults do not want to read long and tiresome documents to learn how to use the system or application.";
+                        rationale= "The use of alternative modalities to teach older adults how to use the app and technology in general has the potential to increase the uptake by older adults.";
+                        solution= "1. The app should have video based tutorials for older adults.";
+                        references= "1. de Barros, A.C., Leito, R. and Ribeiro, J., 2014. Design and evaluation of a mobile user interface for older adults: navigation, interaction and visual design recommendations. Procedia Computer Science. <br/> 2. Nurgalieva, L., Laconich, J.J.J., Baez, M., Casati, F. and Marchese, M., 2019. A systematic literature review of research-derived touchscreen design guidelines for older adults. IEEE Access, 7, pp.22035-22058 <br/> 3. Al-Razgan, M.S., Al-Khalifa, H.S., Al-Shahrani, M.D. and AlAjmi, H.H., 2012, November. Touch-based mobile phone interface guidelines and design recommendations for elderly people: A survey of the literature. In International Conference on Neural Information Processing (pp. 568-574). Springer, Berlin, Heidelberg. <br/> 4. Leito, R. and Silva, P.A., 2012, October. Target and spacing sizes for smartphone user interfaces for older adults: design patterns based on an evaluation with users. In Proceedings of the 19th Conference on Pattern Languages of Programs (p. 5). The Hillside Group. <br/> 5. \"Tried a lot of apps, finally landed here, it is a simple and useful app. The best part is the video tutorials.\"";
                       }
 
-                    else if(d.data.name === "Easily Detectable Vibration Feedback"){
 
-                    importance = "&bigstar;&bigstar;&bigstar;";
-                    problem= "The sense of touch also gets affected with ageing and current technology should cater for this as well";
-                    rationale= "Older adults might not be able to notice the existing vibration feedback. This might lead them to miss important calls or messages or reminders";
-                    solution= "1. User vibration feedback must use small high-speed adjustments to provide strong and easily detectable sensation (above threshold).";                    references= "1. Coelho, J. and Duarte, C., 2016. A literature survey on older adults’ use of social network services and social applications. Computers in Human Behavior, 58, pp.187-205. <br/> 2. Norval, C., Arnott, J.L. and Hanson, V.L., 2014, April. What’s on your mind?: investigating recommendations for inclusive social networking and older adults. In Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (pp. 3923-3932). ACM.";
-
-                    }
-
-                    else if(d.data.name === "Loud Sound of Notifications"){
-                      importance = "&bigstar;&bigstar;&bigstar;";
-                      problem= "Older adults with auditory problems can not hear notifications with lower-frequency.";
-                      rationale= "The soft sound of notifications can be missed by older adults resulting in missing important stuff and things to do";
-                      solution= "1. The sound of the notifications must be loud in the app.";
-                      references= "1. Boyd, K., Bond, R.R., Nugent, C.D. and Donnelly, M.P., 2018. EasiSocial: Recommendations in the development and training of social media tools for older people. In EasiSocial: Recommendations in the development and training of social media tools for older people. <br/> 2. Ahmad, B., Richardson, I. and Beecham, S., 2017, November. A Systematic Literature Review of Social Network Systems for Older Adults. In International Conference on Product-Focused Software Process Improvement (pp. 482-496). Springer, Cham.";
-                    }
-                    else if(d.data.name === "Video Based Tutorials"){
-                      importance = "&bigstar;&bigstar;&bigstar;";
-                      problem= "Older adults do not want to read long and tiresome documents to learn how to use the system or application.";
-                      rationale= "The use of alternative modalities to teach older adults how to use the app and technology in general has the potential to increase the uptake by older adults.";
-                      solution= "1. The app should have video based tutorials for older adults.";
-                      references= "1. de Barros, A.C., Leito, R. and Ribeiro, J., 2014. Design and evaluation of a mobile user interface for older adults: navigation, interaction and visual design recommendations. Procedia Computer Science. <br/> 2. Nurgalieva, L., Laconich, J.J.J., Baez, M., Casati, F. and Marchese, M., 2019. A systematic literature review of research-derived touchscreen design guidelines for older adults. IEEE Access, 7, pp.22035-22058 <br/> 3. Al-Razgan, M.S., Al-Khalifa, H.S., Al-Shahrani, M.D. and AlAjmi, H.H., 2012, November. Touch-based mobile phone interface guidelines and design recommendations for elderly people: A survey of the literature. In International Conference on Neural Information Processing (pp. 568-574). Springer, Berlin, Heidelberg. <br/> 4. Leito, R. and Silva, P.A., 2012, October. Target and spacing sizes for smartphone user interfaces for older adults: design patterns based on an evaluation with users. In Proceedings of the 19th Conference on Pattern Languages of Programs (p. 5). The Hillside Group. <br/> 5. \"Tried a lot of apps, finally landed here, it is a simple and useful app. The best part is the video tutorials.\"";
-                    }
-
-
-                    // the correct version 3 lines below
-                    // div.html("1. Title: " +d.data.name + "<br/> <hr/>" + "2. Category: " +d.parent.data.name + "<br/> <hr/> 3. Description: " +d.depth + "<br/> <hr/> Solutions is:" +solution) //showing the name of the label on tool tip by bilal
-                    //     .style("left", (d3.event.pageX) + "px")
-                    //     .style("top", (d3.event.pageY - 28) + "px");
+                      // the correct version 3 lines below
+                      // div.html("1. Title: " +d.data.name + "<br/> <hr/>" + "2. Category: " +d.parent.data.name + "<br/> <hr/> 3. Description: " +d.depth + "<br/> <hr/> Solutions is:" +solution) //showing the name of the label on tool tip by bilal
+                      //     .style("left", (d3.event.pageX) + "px")
+                      //     .style("top", (d3.event.pageY - 28) + "px");
 
 
 
 
-                        div.html(
-                          "<table>"+
-                          "<th colspan='2'>"+d.data.name+"</th>" +
-                          "<tr><td><b>Importance</b> </td><td>"+importance+" </td></tr>"+
-                          "<tr><td><b>Problem:</b> </td><td><i>"+ problem +"</i> </td></tr>"+
-                          "<tr><td><b>Rationale:</b> </td><td><i>"+ rationale +"</i></td></tr>"+
-                          "<tr><td><b>Solution:</b> </td><td><i>"+ solution+"</i></td></tr>"+
-                          "<tr><td><b>References:</b> </td> <td>"+ references +"</td></tr>"+
-                          "</table>"
-                        ) //showing the name of the label on tool tip by bilal
-                            .style("left", (d3.event.pageX) + "px")
-                            .style("top", (d3.event.pageY - 28) + "px");
+                          div.html(
+                            "<table>"+
+                            "<th colspan='2'>"+d.data.name+"</th>" +
+                            "<tr><td><b>Importance</b> </td><td>"+importance+" </td></tr>"+
+                            "<tr><td><b>Problem:</b> </td><td><i>"+ problem +"</i> </td></tr>"+
+                            "<tr><td><b>Rationale:</b> </td><td><i>"+ rationale +"</i></td></tr>"+
+                            "<tr><td><b>Solution:</b> </td><td><i>"+ solution+"</i></td></tr>"+
+                            "<tr><td><b>References:</b> </td> <td>"+ references +"</td></tr>"+
+                            "</table>"
+                          ) //showing the name of the label on tool tip by bilal
+                              .style("left", (d3.event.pageX) + "px")
+                              .style("top", (d3.event.pageY - 28) + "px");
 
 
 
-                      }
-                })
-                .on("mouseout", function (d) {
-                  if(d.children==null && d.depth==3) {
-                    div.transition()
-                        .duration(500)
-                        .style("opacity", 0);
-                      }
-                });
+                        }
+                  })
+                  .on("mouseout", function (d) {
+                    if(d.children==null && d.depth==3) {
+                      div.transition()
+                          .duration(500)
+                          .style("opacity", 0);
+                        }
+                  });
 
-// adds the circle to the node
-node.append("circle")
-  .attr("r", d => d.data.value)
-  .style("stroke", d => d.data.type)
-  .style("fill", d => d.data.level)
-  //.on("click", click); // this line is added by Bilal i.e. me
-  .on("click", function(d) {
-    alert('The node clicked is: ' +d.data.name + "\t" +d.data.type);
-  })
+  // adds the circle to the node
+  node.append("circle")
+    .attr("r", d => d.data.value)
+    .style("stroke", d => d.data.type)
+    .style("fill", d => d.data.level)
+    //.on("click", click); // this line is added by Bilal i.e. me
+    .on("click", function(d) {
+      alert('The node clicked is: ' +d.data.name + "\t" +d.data.type);
+    })
 
-// adds the text to the node
-node.append("text")
-  .attr("dy", ".35em")
-  .attr("x", d => d.children ? (d.data.value + 5) * -1 : d.data.value + 5)
-  .attr("y", d => d.children && d.depth !== 0 ? -(d.data.value + 5) : d)
-  .style("text-anchor", d => d.children ? "end" : "start")
-  .text(d => d.data.name);
+  // adds the text to the node
+  node.append("text")
+    .attr("dy", ".35em")
+    .attr("x", d => d.children ? (d.data.value + 5) * -1 : d.data.value + 5)
+    .attr("y", d => d.children && d.depth !== 0 ? -(d.data.value + 5) : d)
+    .style("text-anchor", d => d.children ? "end" : "start")
+    .text(d => d.data.name);
 
-// //// Code entered by BILl start
-//   nodeEnter.append("svg:circle")
-//     //.attr("class", "node")
-//     //.attr("cx", function(d) { return source.x0; })
-//     //.attr("cy", function(d) { return source.y0; })
-//     .attr("r", 4.5)
-//     .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; })
-//     .on("mouseover", addLabel)
-//     .on("mouseout", clearLabel)
-//     //.on("click", click);
-//
-//     //// Code entered by BILl End
-
-
-
-    /// Code added by bilal 16 December start
-    // Add tooltip div
-                // var div = d3.select("body").append("div")
-                // .attr("class", "tooltip")
-                // .style("opacity", 1e-6);
+  // //// Code entered by BILl start
+  //   nodeEnter.append("svg:circle")
+  //     //.attr("class", "node")
+  //     //.attr("cx", function(d) { return source.x0; })
+  //     //.attr("cy", function(d) { return source.y0; })
+  //     .attr("r", 4.5)
+  //     .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; })
+  //     .on("mouseover", addLabel)
+  //     .on("mouseout", clearLabel)
+  //     //.on("click", click);
+  //
+  //     //// Code entered by BILl End
 
 
 
-    /// Code added by bilal 16 december finish
+      /// Code added by bilal 16 December start
+      // Add tooltip div
+                  // var div = d3.select("body").append("div")
+                  // .attr("class", "tooltip")
+                  // .style("opacity", 1e-6);
 
 
 
-
-
-
-
-
+      /// Code added by bilal 16 december finish
 
 }
 
 
-// function mouseover() {
-//     div.transition()
-//     .duration(300)
-//     .style("opacity", 1);
-// }
-//
-// function mousemove() {
-//     div
-//     .text("Info about " + d.name + ":" + d.info)
-//     .style("left", (d3.event.pageX ) + "px")
-//     .style("top", (d3.event.pageY) + "px");
-// }
-//
-// function mouseout() {
-//     div.transition()
-//     .duration(300)
-//     .style("opacity", 1e-6);
-// }
-
-
-
-
-// Update the nodes...
-
-
-
-
-// this is added by me i.e. Bilal
-function click(){
-
-  alert('node clicked' );
-
-
-
-
-
-}
-
-
-
-
-  </script>
-
-
-
-<fieldset style="height:50px">
-  <p class="headerparagraph"> <b>ReDEAP</b> | <i>Recommendations to Develop Smartphone Applications for Older Adults</i>  </p>
-
-</fieldset>
-
-<br/>
-
-
-
-
-<div class="buttoncontainer">
-  <div class="first">
-
-
-    <fieldset style="height:210px;">
-    <legend>Accessibility</legend>
-    <p style="font-size:20px;">I would like to develop a smartphone app for older adults which is:</p>
-
-    <button class="button" onclick="myPerceiveable()" title="present information and user interface components so that users can perceive!">Perceivable</button>
-
-    <button class="button button2" onclick="myOperable()" title="make user interface and navigation operable for users!">Operable</button>
-
-
-    <button class="button button3" onclick="myUnderstandable()" title="make information and user interface understandble for users! ">Understandable</button>
-
-    <button class="button button5" onclick="myRobust()" title="make content robust enough to ensure reliability for users!">Robust</button>
-    </fieldset>
-
-</div>
-
-
-
-<div class="second">
-<fieldset style="height:210px;">
-<legend>Usability</legend>
-<p style="font-size:20px;">I would like to develop a smartphone app for older adults which is:</p>
-<button class="button button11" onclick="myUseful()" title="make the smartphone app fill a need of users!">Useful</button>
-<button class="button button12" onclick="myUsable()" title="make the smartphone app simple and easy to use!">Usable</button>
-<button class="button button13" onclick="myDesirable()" title="make the visual aesthetics of the smartphone app attractive!">Desirable</button>
-<button class="button button14" onclick="myFindable()" title="make the information in the app findable and easy to navigate!">Findable</button>
-<button class="button button15" onclick="myCredible()" title="make the information in the app trustworthy!">Credible</button>
-<button class="button button12" onclick="myAccessible()" title="make the app useful for disabled users!">Accessible</button>
-<button class="button button13" onclick="myValuable()" title="make the app deliver value to users!">Valuable</button>
-</fieldset>
-
-</div>
-
-
-</div>
+</script>
 
 
 
 
 
 
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   </body>
-  </html>
+</html>
