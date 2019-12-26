@@ -10,7 +10,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <title>Hello, world!</title>
+    <title>ReDEAP - BA</title>
 
 
 
@@ -156,45 +156,49 @@
 <br/>
 1. I would like to develop a smartphone app for older adults which is accessible:
 <br/>
-<button type="button" class="btn btn-primary" onclick="myPerceiveable();">Perceivable</button>
-<button type="button" class="btn btn-secondary" onclick="myOperable()">Operable</button>
-<button type="button" class="btn btn-success" onclick="myUnderstandable()">Understandable</button>
-<button type="button" class="btn btn-danger" onclick="myRobust()">Robust</button>
+<button type="button" class="btn btn-primary" onclick="myPerceiveable();" style="border-radius:10px;"></button> Perceivable <br/>
+<button type="button" class="btn btn-secondary" onclick="myOperable()" style="border-radius:10px;"></button> Operable<br/>
+<button type="button" class="btn btn-success" onclick="myUnderstandable()" style="border-radius:10px;"></button> Understandable<br/>
+<button type="button" class="btn btn-danger" onclick="myRobust()" style="border-radius:10px;"></button> Robust
 
 <br/><br/>
 2. I would like to develop a smartphone app for older adults which is usable:
 <br/>
-<button type="button" class="btn btn-primary" onclick="myUseful()">Useful</button>
-<button type="button" class="btn btn-secondary" onclick="myUsable()">Usable</button>
-<button type="button" class="btn btn-success" onclick="myDesirable()">Desirable</button>
-<button type="button" class="btn btn-danger" onclick="myFindable()">Findable</button>
-<button type="button" class="btn btn-warning" onclick="myCredible()">Credible</button>
-<button type="button" class="btn btn-info" onclick="myAccessible()">Accessible</button>
-<button type="button" class="btn btn-primary" onclick="myValuable()">Valuable</button>
+<button type="button" class="btn btn-primary" onclick="myUseful()" style="border-radius:10px;"></button> Useful <br/>
+<button type="button" class="btn btn-secondary" onclick="myUsable()" style="border-radius:10px;"></button> Usable <br/>
+<button type="button" class="btn btn-success" onclick="myDesirable()" style="border-radius:10px;"></button> Desirable <br/>
+<button type="button" class="btn btn-danger" onclick="myFindable()" style="border-radius:10px;"></button> Findable <br/>
+<button type="button" class="btn btn-warning" onclick="myCredible()" style="border-radius:10px;"></button> Credible <br/>
+<button type="button" class="btn btn-info" onclick="myAccessible()" style="border-radius:10px;"></button> Accessible <br/>
+<button type="button" class="btn btn-primary" onclick="myValuable()" style="border-radius:10px;"></button> Valuable <br/>
 
-<br/><br/>
-Third Question
 <br/>
-<button type="button" class="btn btn-primary">Option 1</button>
-<button type="button" class="btn btn-secondary">Option 2</button>
-<button type="button" class="btn btn-success">Option 3</button>
-<button type="button" class="btn btn-danger">Option 4</button>
+3. Third Question
+<br/>
+<button type="button" class="btn btn-primary" style="border-radius:10px;"></button> Option 1 <br/>
+<button type="button" class="btn btn-secondary" style="border-radius:10px;"></button> Option 2 <br/>
+<button type="button" class="btn btn-success" style="border-radius:10px;"></button> Option 3 <br/>
+<button type="button" class="btn btn-danger" style="border-radius:10px;"></button> Option 4 <br/>
 
-<br/><br/>
-Fourth Question
 <br/>
-<button type="button" class="btn btn-primary">Option 1</button>
-<button type="button" class="btn btn-secondary">Option 2</button>
-<button type="button" class="btn btn-success">Option 3</button>
-<button type="button" class="btn btn-danger">Option 4</button>
+4. Fourth Question
+<br/>
+<button type="button" class="btn btn-primary" style="border-radius:10px;"></button> Option 1 <br/>
+<button type="button" class="btn btn-secondary" style="border-radius:10px;"></button> Option 2 <br/>
+<button type="button" class="btn btn-success" style="border-radius:10px;"></button> Option 3 <br/>
+<button type="button" class="btn btn-danger" style="border-radius:10px;"></button> Option 4 <br/>
 
-<br/><br/>
-Fifth Question
 <br/>
-<button type="button" class="btn btn-primary">Option 1</button>
-<button type="button" class="btn btn-secondary">Option 2</button>
-<button type="button" class="btn btn-success">Option 3</button>
-<button type="button" class="btn btn-danger">Option 4</button>
+5. Fifth Question
+<br/>
+<button type="button" class="btn btn-primary" style="border-radius:10px;"></button> Option 1 <br/>
+<button type="button" class="btn btn-secondary" style="border-radius:10px;"></button> Option 2 <br/>
+<button type="button" class="btn btn-success" style="border-radius:10px;"></button> Option 3 <br/>
+<button type="button" class="btn btn-danger" style="border-radius:10px;"></button> Option 4 <br/> <br/>
+
+<button type="button" class="btn btn-success" style="border-radius:10px;">Submit</button>
+<button type="button" class="btn btn-danger" style="border-radius:10px;" onclick="defaultTree();">Clear</button>
+<br/>
 
 </div>
 
@@ -271,6 +275,123 @@ Fifth Question
 
 
 <script>
+
+
+defaultTree(); //by default show tree without any leafs
+
+//show the default tree without any leafs
+function defaultTree(){
+
+
+  //document.body.innerHTML= '<button onclick="myFunction()">Show Perceivable Recommendations Only</button>';
+  d3.select("svg").remove();
+
+
+
+  treeData = {
+    "name": "ReDEAP",
+    "value": 15,
+    "type": "red",
+    "level": "yellow",
+    "children": [
+
+      {
+        "name": "Accessibility",
+        "value": 10,
+        "type": "grey",
+        "level": "red",
+        "children": [
+          {
+            "name": "Perceiveable",
+            "value": 7.5,
+            "type": "grey",
+            "level": "purple",
+
+          },
+          {
+            "name": "Operable",
+            "value": 7.5,
+            "type": "grey",
+            "level": "purple",
+          },
+          {
+            "name": "Understandable",
+            "value": 7.5,
+            "type": "grey",
+            "level": "purple",
+          },
+          {
+            "name": "Robust",
+            "value": 7.5,
+            "type": "grey",
+            "level": "purple",
+          }
+        ]
+      },
+      {
+        "name": "Usability",
+        "value": 10,
+        "type": "grey",
+        "level": "green",
+        "children": [
+          {
+            "name": "Useful",
+            "value": 7.5,
+            "type": "grey",
+            "level": "orange",
+          },
+          {
+            "name": "Usable",
+            "value": 7.5,
+            "type": "grey",
+            "level": "orange",
+          },
+          {
+            "name": "Desirable",
+            "value": 7.5,
+            "type": "grey",
+            "level": "orange",
+
+          },
+          {
+            "name": "Findable",
+            "value": 7.5,
+            "type": "grey",
+            "level": "orange",
+
+          },
+          {
+            "name": "Credible",
+            "value": 7.5,
+            "type": "grey",
+            "level": "orange",
+
+          },
+          {
+            "name": "Accessible",
+            "value": 7.5,
+            "type": "grey",
+            "level": "orange",
+
+          },
+          {
+            "name": "Valuable",
+            "value": 7.5,
+            "type": "grey",
+            "level": "orange",
+
+          }
+        ]
+      }
+    ]
+  };
+
+  generateTree();
+
+}
+
+
+
 
 
 
