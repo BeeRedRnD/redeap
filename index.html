@@ -113,7 +113,8 @@
   <body>
 
 
-
+    
+    
 
 
     <nav class="navbar  navbar-expand-lg navbar-dark bg-primary" >
@@ -163,12 +164,220 @@
   </div>
 </nav>
 
+<div class="row" style="margin-left:2px;margin:0px;padding:3px;border:0px solid;text-align:center;background-color:#C6CCB2;">
+  <div class="col-md-10" style="background-color:#C6CCB2;font-size:25px;color:black;font-weight:bold;margin:7px;" >
+    ReDEAP - Recommender System Demo
+  </div>
+</div>
 
-<div class="row" style="margin-left:2px;margin-right:0px;">
+<div class="row" style="margin-left:2px;margin:0px;padding:3px;border:0px solid;text-align:center;background-color:#007BFF;">
+  <div class="col-md-4" style="background-color:#007BFF;font-size:25px;color:white;margin:7px;border:0px solid;" >
+    Questions
+  </div>
+  <div class="col-md-1" style="background-color:#007BFF;font-size:25px;color:white;margin:7px;border:0px solid;" >
+    --->
+  </div>
+  <div class="col-md-3" style="background-color:#007BFF;font-size:25px;color:white;margin:7px; border:0px solid;" >
+    Recommendations
+  </div>
+</div>
+
+
+<div class="row" style="margin-left:2px;margin:0px;padding:0px;">
 
 <div class="col-md-4" style="background-color:#F7F7F9; " >
 <br/>
-1. I would like to develop a smartphone app for older adults which is accessible:
+
+
+<div id="accordion">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="font-size:20px;">
+          1. Accessible
+        </button>
+      </h5>
+    </div>
+
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+        1. I would like to develop a smartphone app for older adults which is accessible: <br/>
+        <button type="button" class="btn btn-primary" onclick="myPerceiveable();" style="border-radius:10px;"></button> Perceivable <br/>
+        <button type="button" class="btn btn-secondary" onclick="myOperable()" style="border-radius:10px;"></button> Operable<br/>
+        <button type="button" class="btn btn-success" onclick="myUnderstandable()" style="border-radius:10px;"></button> Understandable<br/>
+        <button type="button" class="btn btn-danger" onclick="myRobust()" style="border-radius:10px;"></button> Robust
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="accordion2">
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h5 class="mb-0">
+        <button class="btn" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" style="font-size:20px;">
+          2. Usable
+        </button>
+      </h5>
+    </div>
+
+    <div id="collapseTwo" class="collapse hide" aria-labelledby="headingTwo" data-parent="#accordion2">
+      <div class="card-body">
+        2. I would like to develop a smartphone app for older adults which is usable:
+        <br/>
+        <button type="button" class="btn btn-primary" onclick="myUseful()" style="border-radius:10px;"></button> Useful <br/>
+        <button type="button" class="btn btn-secondary" onclick="myUsable()" style="border-radius:10px;"></button> Usable <br/>
+        <button type="button" class="btn btn-success" onclick="myDesirable()" style="border-radius:10px;"></button> Desirable <br/>
+        <button type="button" class="btn btn-danger" onclick="myFindable()" style="border-radius:10px;"></button> Findable <br/>
+        <button type="button" class="btn btn-warning" onclick="myCredible()" style="border-radius:10px;"></button> Credible <br/>
+        <button type="button" class="btn btn-info" onclick="myAccessible()" style="border-radius:10px;"></button> Accessible <br/>
+        <button type="button" class="btn btn-primary" onclick="myValuable()" style="border-radius:10px;"></button> Valuable <br/>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- First FieldSet Start -->
+<div id="accordion3">
+  <div class="card">
+    <div class="card-header" id="applicationDomain">
+      <h5 class="mb-0" style="text-align:left;">
+        <button class="btn" data-toggle="collapse" data-target="#appDomain" aria-expanded="true" aria-controls="appDomain" style="font-size:20px;">
+          3. Application Domain
+        </button>
+      </h5>
+    </div>
+
+    <div id="appDomain" class="collapse hide" aria-labelledby="applicationDomain" data-parent="#accordion3">
+      <div class="card-body">
+        3. What is the domain of the smartphone app you would like to develop for older adults? <br/>
+        <button type="button" class="btn btn-primary" onclick="" style="border-radius:10px;"></button> Social Interaction <br/>
+        <button type="button" class="btn btn-secondary" onclick="" style="border-radius:10px;"></button> Healthcare<br/>
+        <button type="button" class="btn btn-success" onclick="" style="border-radius:10px;"></button> Religion and Spirituality<br/>
+        <button type="button" class="btn btn-danger" onclick="" style="border-radius:10px;"></button> Information, Learning and Education
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- First FieldSet End -->
+
+
+<!-- Second FieldSet Start -->
+<div id="accordion4">
+  <div class="card">
+    <div class="card-header" id="exitingGuidelines">
+      <h5 class="mb-0" style="text-align:left;">
+        <button class="btn" data-toggle="collapse" data-target="#existingGuide" aria-expanded="true" aria-controls="existingGuide" style="font-size:20px;">
+          4. Existing Guidelines Usage
+        </button>
+      </h5>
+    </div>
+
+    <div id="existingGuide" class="collapse hide" aria-labelledby="exitingGuidelines" data-parent="#accordion4">
+      <div class="card-body">
+        4. Are you using existing research derived or standards (web accessibility guidelines)? <br/>
+        <button type="button" class="btn btn-primary" onclick="" style="border-radius:10px;"></button> Yes <br/>
+        <button type="button" class="btn btn-secondary" onclick="" style="border-radius:10px;"></button> No<br/>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- second FieldSet End -->
+
+<!-- Third FieldSet Start -->
+<div id="accordion5">
+  <div class="card">
+    <div class="card-header" id="typeofOAs">
+      <h5 class="mb-0" style="text-align:left;">
+        <button class="btn" data-toggle="collapse" data-target="#oaType" aria-expanded="true" aria-controls="oaType" style="font-size:20px;">
+          5. Type of Older Adults
+        </button>
+      </h5>
+    </div>
+
+    <div id="oaType" class="collapse hide" aria-labelledby="typeofOAs" data-parent="#accordion5">
+      <div class="card-body">
+        5. What type of older adults are going to use your smartphone application? <br/>
+        <button type="button" class="btn btn-primary" onclick="" style="border-radius:10px;"></button> Tech-Savvy Older Adults<br/>
+        <button type="button" class="btn btn-secondary" onclick="" style="border-radius:10px;"></button> Non-tech Savvy Older Adults <br/>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Third FieldSet End -->
+
+<!-- Fourth FieldSet Start -->
+<div id="accordion6">
+  <div class="card">
+    <div class="card-header" id="ageGroupOAs">
+      <h5 class="mb-0" style="text-align:left;">
+        <button class="btn" data-toggle="collapse" data-target="#ageGroup" aria-expanded="true" aria-controls="ageGroup" style="font-size:20px;">
+          6. Age Group of Older Adults
+        </button>
+      </h5>
+    </div>
+
+    <div id="ageGroup" class="collapse hide" aria-labelledby="ageGroupOAs" data-parent="#accordion6">
+      <div class="card-body">
+        6. What type of older adults are going to use your smartphone application? <br/>
+        <button type="button" class="btn btn-primary" onclick="" style="border-radius:10px;"></button> Between 50-64 years <br/>
+        <button type="button" class="btn btn-secondary" onclick="" style="border-radius:10px;"></button> Between 65-80 years <br/>
+        <button type="button" class="btn btn-success" onclick="" style="border-radius:10px;"></button> Over 80<br/>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Fourth FieldSet End -->
+
+
+<!-- Fifth FieldSet Start -->
+<div id="accordion7">
+  <div class="card">
+    <div class="card-header" id="problemofOAs">
+      <h5 class="mb-0" style="text-align:left;">
+        <button class="btn" data-toggle="collapse" data-target="#problemOA" aria-expanded="true" aria-controls="problemOA" style="font-size:20px;">
+          7. Problems of Older Adults
+        </button>
+      </h5>
+    </div>
+
+    <div id="problemOA" class="collapse hide" aria-labelledby="problemofOAs" data-parent="#accordion7">
+      <div class="card-body">
+        7. Please select (if any) are the problems your older adults are facing? <br/>
+        <button type="button" class="btn btn-primary" onclick="" style="border-radius:10px;"></button> Vision <br/>
+        <button type="button" class="btn btn-secondary" onclick="" style="border-radius:10px;"></button> Hearing <br/>
+        <button type="button" class="btn btn-success" onclick="" style="border-radius:10px;"></button> Motor or Dextertity <br/>
+        <button type="button" class="btn btn-danger" onclick="" style="border-radius:10px;"></button> Cognitive <br/>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Fifth FieldSet End -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 1. I would like to develop a smartphone app for older adults which is accessible:
 <br/>
 <button type="button" class="btn btn-primary" onclick="myPerceiveable();" style="border-radius:10px;"></button> Perceivable <br/>
 <button type="button" class="btn btn-secondary" onclick="myOperable()" style="border-radius:10px;"></button> Operable<br/>
@@ -212,12 +421,18 @@
 
 <button type="button" class="btn btn-success" style="border-radius:10px;">Submit</button>
 <button type="button" class="btn btn-danger" style="border-radius:10px;" onclick="defaultTree();">Clear</button>
+<br/> -->
+
+<div style="border:0px solid;margin-left:80px;margin-right:80px;margin-top:10px; margin-bottom:0px;">
+<button type="button" class="btn btn-success" style="border-radius:10px;">Submit</button>
+<button type="button" class="btn btn-danger" style="border-radius:10px;" onclick="defaultTree();">Clear</button>
+</div>
 <br/>
 
 </div>
 
 
-<div class="col-md-8" style="background-color:white; max-width:20px !important" id="chaska">
+<div class="col-md-8" style="background-color:white; max-width:40px !important" id="chaska">
 
 <br/>
 
@@ -266,6 +481,10 @@
 
 
 
+
+
+
+
 <footer id="footer">
 
 
@@ -279,6 +498,8 @@
 <p>&copy; Copyright 2019 ReDEAP</p>
 
 </footer>
+
+
 
 
 
@@ -1995,9 +2216,9 @@ function generateTree() {
 
 
   // set the dimensions and margins of the diagram
-  const margin = {top: 0, right:410, bottom: 30, left: 79},
-        width  = 800 - margin.left - margin.right,
-        height = 500 - margin.top - margin.bottom;
+  const margin = {top: 0, right:550, bottom: 30, left: 79},
+        width  = 850 - margin.left - margin.right,
+        height = 680 - margin.top - margin.bottom;
 
   // declares a tree layout and assigns the size
   const treemap = d3.tree().size([height, width]);
@@ -2198,3 +2419,4 @@ function generateTree() {
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   </body>
 </html>
+
